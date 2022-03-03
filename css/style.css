@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Mulish:wght@300&family=Open+Sans:ital,wght@0,700;1,600&family=Poppins:ital,wght@0,200;1,300&family=Roboto:wght@300;400&display=swap');
+
+*
+{
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: black;
+}
+.heading
+{
+    margin-top:5px;
+    height:60px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:sticky;
+    overflow: hidden;
+    z-index:1;
+}
+.search
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.search input
+{
+    width:70vw;
+    height:6vh;
+    padding-left:10px;
+    outline: none;
+    border:none;
+    
+}
+.search button
+{
+    width:4vw;
+    height:6vh;
+    outline:none;
+    border: none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:white;
+    margin-left:0.5rem;
+}
+.search button img
+{
+    height:1.3rem;
+    width:1.3rem;
+}
+
+.info
+{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+.info .main
+{
+    padding:1rem;
+    min-height:40vh;
+    min-width:30vw;
+    margin:1rem;
+}
+
+.info .main h1 
+{
+    background:rgba(81, 82, 82, 0.8);
+    color:#17A2B8;
+    margin-bottom:0.5rem;
+    text-align:center;
+}
+.info .main h1 .category
+{
+    color:#a0a6a7;
+}
+.info .main .all-data
+{
+    background:linear-gradient(to right,#5cb7db, #49565c );
+    padding:0.5rem;
+}
+.info .main .all-data h3
+{
+    margin:0.5rem;
+    color:white;
+}
+.info .main .all-data h3 .category
+{
+    color:black;
+}
+.picture img
+{
+    width:100%;
+    margin-top:10px;
+}
+
+
+@media (max-width:500px)
+{
+    .search button
+    {
+        height:6vh;
+        width:5vh;
+    }
+    .info{
+        flex-wrap:nowrap;
+        overflow-x:auto;
+        justify-content: left;
+    }
+    .info::before{
+        content:"Swipe for more";
+        position:fixed;
+        bottom:1rem;
+        right:0.5rem;
+        text-align:center;
+        color:white;
+    }
+    .info .main{
+        min-height:50vh;
+        min-width:90vw;
+        margin:1rem;
+    }
+}
+@media (max-width:350px)
+{
+    .search button
+    {
+        height:5.8vh;
+    }
+}
